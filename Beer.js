@@ -5,7 +5,7 @@ class Beer{
   }
 
   printString(){
-    console.log('Dit bier heet: ' + this.name + ' en het flesje bevat ' + this.size + ' ml.');
+    return 'Dit bier heet: ' + this.name + ' en het flesje bevat ' + this.size + ' ml.';
   }
 }
 

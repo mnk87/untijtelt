@@ -20,14 +20,10 @@ class Repository{
     for(let beer of this.beers){
       if(beer.name === antwoord){
         response = 'gevonden: ' + beer.name + ' zit in de repository in een flesje van ' + beer.size + ' ml.';
+        return response;
       }
     }
-    if(response != undefined){
-      console.log(response);
-    }
-    else{
-      throw new Error('niet gevonden');
-    }
+    throw new Error('niet gevonden');
   }
 
 
